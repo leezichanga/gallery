@@ -28,7 +28,7 @@ class categories(models.Model):
 
 
 class Photos(models.Model):
-    image = models.ImageField(upload_to = 'photos/', null = True)
+    image = models.ImageField(upload_to = 'photos/', null=True)
     name = models.CharField(max_length=30)
     descripton = models.TextField()
     location_taken = models.ForeignKey(Location, null=True)
