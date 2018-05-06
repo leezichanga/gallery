@@ -15,7 +15,7 @@ def photos_of_day(request):
     html = f'''
         <html>
             <body>
-                <h1>News for {day} {date.day}-{date.month}-{date.year}</h1>
+                <h1>Photos for {day} {date.day}-{date.month}-{date.year}</h1>
             </body>
         </html>
             '''
