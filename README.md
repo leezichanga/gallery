@@ -13,7 +13,7 @@ Browser
 Internet connection
 
 ## Setup and installation
-Click on this link, https://gallery21.herokuapp.com/
+Click on this link, https://gallery75.herokuapp.com/
 
 View images on home page
 
@@ -29,7 +29,7 @@ CSS
 HTML
 
 ## Link to deployed site
- https://gallery21.herokuapp.com/
+ https://gallery75.herokuapp.com/
 
 
 ## Licence and Copyright
