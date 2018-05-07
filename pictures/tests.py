@@ -40,22 +40,3 @@ class CategoriesTestClass(TestCase):
         self.category.delete_category()
         categories_object = categories.objects.all()
         self.assertTrue(len(categories_object)==0)
-
-class PhotosTestClass(TestCase):
-    def setUp(self):
-        self.photo = Photos(image='imageurl', name='nature', descripton='the beautiful nature')
-
-    def test_photo_instance(self):
-        self.assertTrue(isinstance(self.photo, Photos))
-
-    def test_save_photo_method(self):
-        self.photo.save_image()
-        photos = Photos.objects.all()
-        self.assertTrue(len(photos)>0)
-
-    def test_delete_photo_method(self):
-        self.photo.save_image()
-        photos = Photos.objects.all()
-        self.photo.delete_image()
-        photos = Photos.objects.all()
-        self.assertTrue(len(photos)==0)
