@@ -1,15 +1,15 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container">
-  <section class="no-touch">
+
     <div class="wrap">
       {% if photos %}
       <p class="text-center" style="font-size:1.3em">Search Results: <span>{{photos|length}}</span> found matching your search crireria</p>
       {% for photo_item in photos%}
       <a href="{% url 'myPhoto' photo_item.id %}">
         <div class="box">
-          <div class="boxInner">
+          <div class="box1">
             <img src="{{photo_item.image.url}}" class="img-responsive">
-            <div class="titleBox" style="font-family: 'Cabin Sketch', cursive">{{photo_item.name|upper}}</div>
+            <div class="titleBox" style="font-family: 'Monotype Corsiva',">{{photo_item.name|upper}}</div>
           </div>
         </div>
       </a>
@@ -20,7 +20,7 @@
       {% endif %}
     </div>
 
-  </section>
+ 
 </div>
 
 {% endblock %}
