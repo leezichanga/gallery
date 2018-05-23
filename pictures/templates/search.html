@@ -3,7 +3,7 @@
   <section class="no-touch">
     <div class="wrap">
       {% if photos %}
-      <p class="text-center" style="font-size:1.3em">Search Results: <span>{{photos|length}}</span> found matching your search crireria</p>
+      <p class="text-center" style="font-size:1.3em">Search Results: <span>{{photos|length}}</span> found matching your search criteria</p>
       {% for photo_item in photos%}
       <a href="{% url 'myPhoto' photo_item.id %}">
         <div class="box">
